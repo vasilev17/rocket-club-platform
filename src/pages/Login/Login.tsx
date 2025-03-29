@@ -1,6 +1,7 @@
 import { useState } from "react";
 import reactLogo from "../../assets/react.svg";
 import viteLogo from "/vite.svg";
+import planet from "../../assets/planet.svg";
 import "./Login.css";
 import { AuroraText } from "@/components/magicui/aurora-text";
 
@@ -44,6 +45,7 @@ function Login() {
         <p className="read-the-docs">
           Click on the Vite and React logos to learn more
         </p>
+        <img style={{position: 'absolute', inset: "auto 0% -136px", width: "100%", height: "44vh"}} src={planet} alt="Floating-Planet" />
       </div>
     </>
   );
