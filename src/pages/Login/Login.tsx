@@ -1,9 +1,6 @@
 import { useState } from "react";
-import reactLogo from "../../assets/react.svg";
-import viteLogo from "/vite.svg";
 import planet from "../../assets/planet.svg";
 import "./Login.css";
-import { AuroraText } from "@/components/magicui/aurora-text";
 
 function Login() {
   const [count, setCount] = useState(0);
@@ -11,41 +8,29 @@ function Login() {
   return (
     <>
       <div className="sceneCover">
-        <div style={{ display: "flex", justifyContent: "center" }}>
-          <a href="https://vite.dev" target="_blank">
-            <img src={viteLogo} className="logo" alt="Vite logo" />
-          </a>
-          <a href="https://react.dev" target="_blank">
-            <img src={reactLogo} className="logo react" alt="React logo" />
-          </a>
+        <div className="chipsSection">
+          <div className="chipLeft"></div>
+          <div className="chipText">Waitlist</div>
+          <div className="chipRight"></div>
         </div>
-        <h1 className="font-bold text-white outline-6">
-          Vite +{" "}
-          <AuroraText
-            colors={[
-              "#FF0080",
-              "#8943c9",
-              "#0070F3",
-              "#38bdf8",
-              "#a855f7",
-              "#2dd4bf",
-            ]}
-          >
-            React
-          </AuroraText>
+        <h1 className="title">
+          Rocket
+          <br /> Club
         </h1>
-        <div className="card">
-          <button onClick={() => setCount((count) => count + 1)}>
-            count is {count}
-          </button>
-          <p>
-            Edit <code>src/App.tsx</code> and save to test HMR
-          </p>
-        </div>
-        <p className="read-the-docs">
-          Click on the Vite and React logos to learn more
+        <p className="description">
+          Welcome to the platform of rocket club TU Sofia. This platform aims to support
+          and facilitate the communication and activities of all club participants.
         </p>
-        <img style={{position: 'absolute', inset: "auto 0% -136px", width: "100%", height: "44vh"}} src={planet} alt="Floating-Planet" />
+        <img
+          style={{
+            position: "absolute",
+            inset: "auto 0% -136px",
+            width: "100%",
+            height: "44vh",
+          }}
+          src={planet}
+          alt="Floating-Planet"
+        />
       </div>
     </>
   );

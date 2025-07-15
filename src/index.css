@@ -3,6 +3,15 @@
 @tailwind utilities;
 
 :root {
+
+/* Colors */
+--primary-color: #8748ff;
+--primary-color-opacity: #d387ff00;
+--secondary-color: #855eca;
+
+
+/* --------------------------------- */
+
   font-family: 'DM Sans', sans-serif;
   line-height: 1.5;
   font-weight: 400;

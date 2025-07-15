@@ -7,6 +7,7 @@ import Feed from './pages/Feed/Feed'
 import Announcements from './pages/Feed/Announcements'
 import Events from './pages/Feed/Events'
 import General from './pages/Feed/General'
+import Welcome from './pages/Feed/Welcome'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
@@ -14,6 +15,7 @@ createRoot(document.getElementById('root')!).render(
       <Routes>
         <Route path="/login" element={<Login />} />
         <Route path="/" element={<Feed />}>
+          <Route path="welcome" element={<Welcome />} />
           <Route path="announcements" element={<Announcements />} />
           <Route path="events" element={<Events />} />
           <Route path="general" element={<General />} />

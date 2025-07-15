@@ -9,12 +9,19 @@
   border-radius: 12px;
 }
 
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 90%;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
 .nav-items {
   display: flex;
   justify-content: center;
   gap: 2rem;
-  max-width: 50rem;
-  margin: 0 auto;
   padding: 0 1rem;
 }
 
@@ -51,6 +58,61 @@
   height: 0.1875rem;
   background-color: #4299e1;
   border-radius: 0.1875rem 0.1875rem 0 0;
+}
+
+.logout-btn {
+  padding: 0.75rem;
+  border: none;
+  background: none;
+  cursor: pointer;
+  color: #64748b;
+  transition: all 0.2s ease;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.logout-btn:hover {
+  color: #ef4444;
+  background: #fee2e2;
+}
+
+.logout-btn::after {
+  content: 'Logout';
+  position: absolute;
+  bottom: -2.7rem;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #1a1a1a;
+  color: white;
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.375rem;
+  font-size: 0.875rem;
+  white-space: nowrap;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.2s ease;
+  pointer-events: none;
+}
+
+.logout-btn:hover::after {
+  opacity: 0;
+  visibility: visible;
+  animation: showTooltip 0.4s ease forwards;
+  animation-delay: 0.5s;
+}
+
+@keyframes showTooltip {
+  to {
+    opacity: 1;
+  }
+}
+
+.logout-icon {
+  width: 1.5rem;
+  height: 1.5rem;
 }
 
 @media (max-width: 48rem) {
