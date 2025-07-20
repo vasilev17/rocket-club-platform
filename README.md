@@ -2,7 +2,7 @@
   
 <h1>🚀 Rocket Club Platform — Communication Facilitator</h1>
   
-<p>A React web-app that centralises announcements, events and day-to-day discussion for</br>
+<p>A React web-app that centralizes announcements, events and day-to-day discussion for</br>
 <a href="https://www.linkedin.com/company/rsci-tus/posts/?feedView=all" target="_blank"><b>RSci-TUS</b></a>
 <i>(Aerospace Vehicles and Instruments @ Technical University - Sofia).</i></p>
 
