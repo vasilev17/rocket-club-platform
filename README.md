@@ -16,15 +16,15 @@
 
 ---
 
-## 🏷️ Features
+## 📋 Features
 
 - **Personalized User Access** - Log in to the platform using the unique credentials provided by the club lead.
   
-- **Category-Based Feed** – Switch seamlessly between *Welcome*, *Announcements*, *Events* and *General* timelines for clean feed context separation
+- **Category-Based Feed** – Switch seamlessly between *Welcome*, *Announcements*, *Events* and *General* timelines for clean feed context separation.
   
 - **Automated Posts** – The platform automatically updates the *Welcome* feed when a new participant joins, so others can get to know and greet him.
   
-- **Interactive Posts** – Engage with other users by liking and commenting on posts
+- **Interactive Posts** – Engage with other users by liking and commenting on posts.
 
 ---
 
@@ -36,7 +36,7 @@
 
 ---
 
-## 🚀 Getting Started
+## 🏁 Getting Started
 
 ### Prerequisites
 - **Node.js ≥ 18**
